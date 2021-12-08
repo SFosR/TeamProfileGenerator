@@ -22,7 +22,10 @@ generateHTML = (theTeam) => {
 
 const generateCompleteHTML = (theTeamCards) => {
     return
-};  
+    
+ 
+ };  
+
 
 module.exports = generateHTML;
 
