@@ -1,20 +1,41 @@
-const { test, expect } = require("@jest/globals");
-const Employee = require("../lib/engineer");
+const Engineer = require("../lib/engineer");
 
-test("Sets GitHub", () => {
-  const testGitHub = "githubUser";
-  const worker = new Engineer("Frank", 10, "frank@frank.com", testGitHub);
-  expect(worker.github).toBe(testGitHub);
+describe("Engineer", () => {
+  it('Creates Engineer', () => {
+    const engineer = new Engineer('Sheri', '1', 'fostr.sheri@gmail.com', 'SFosR');
+
+    expect(engineer.name).toBe('Sheri');
+    expect(engineer.id).toBe("1");
+    expect(engineer.email).toBe("fostr.sheri@gmail.com");
+    expect(engineer.gitHub).toBe('SFosR')
+    expect(engineer.type).toBe("Engineer");
+  });
+  it("sets the name", () => {
+    const engineer = new Engineer("Sheri", "1", "fostr.sheri@gmail.com", "SFosR");
+    expect(engineer.getName()).toBe("Sheri");
+  });
+
+  it("sets the Id", () => {
+    const engineer = new Engineer("Sheri", "1", "fostr.sheri@gmail.com", "SFosR");
+    expect(engineer.getId()).toBe("1");
+  });
+
+  it("sets the email", () => {
+    const engineer = new Engineer("Sheri", "1", "fostr.sheri@gmail.com", "SFosR");
+    expect(engineer.getEmail()).toBe("fostr.sheri@gmail.com");
+  });
+
+  it("sets the Role", () => {
+    const engineer = new Engineer("Sheri", "1", "fostr.sheri@gmail.com", "SFosR");
+    expect(engineer.getRole()).toBe("Engineer");
+  });
+
+  it("sets office number", () => {
+    const engineer = new Engineer("Sheri", "1", "fostr.sheri@gmail.com", "SFosR");
+    expect(engineer.getGitHub()).toBe("SFosR")
+  });
+
+
 });
 
-test("Sets GitHub Username", () => {
-  const testGitHubUser = "github";
-  const worker = new Engineer("Frank", 10, "frank@frank.com", testGitHubUser);
-  expect(worker.GitHubUser()).toBe(testGitHub);
-});
 
-test("Sets Role", () => {
-  const role = "Intern";
-  const worker = new Engineer("Frank", 10, "frank@frank.com", "GitHubUser");
-  expect(worker.role()).toBe(role);
-});
