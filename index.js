@@ -3,13 +3,13 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 //pulls in libraries for classes
-const employee = require('./lib/Employee');
-const engineer = require('./lib/Engineer');
-const intern = require('./lib/Intern');
+
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
 
 const generateHTML = require('./src/generateHTML');
-const Engineer = require('./lib/Engineer');
+
 
 
 let theTeam = [];
