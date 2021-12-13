@@ -11,5 +11,7 @@ This is a command-line application that allows employers to have one central loc
 
 ## Video
 
+https://youtu.be/Smtnpjkil9Q
+
 ### Created by: Sheri Foster fostr.sheri@gmail.com
 
