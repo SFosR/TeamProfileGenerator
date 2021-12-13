@@ -50,7 +50,7 @@ const generateCompleteHTML = (theTeamCards) => {
    </div>
    </body>
    </html> 
-    `;
+    `
 };
 
 const generateManagerCard = (manager) => {
@@ -67,7 +67,7 @@ const generateManagerCard = (manager) => {
     <p class="border m-2"><i class="fas fa-envelope-square"></i>${manager.email}</p>
     <p class="border m-2">${manager.officeNumber}</p>
   </div>
-  </div>  `;
+  </div> `
 };
 
 const generateEngineerCard = (engineer) => {
@@ -84,7 +84,7 @@ const generateEngineerCard = (engineer) => {
       <p class="border m-2"><i class="fas fa-envelope-square"></i>${engineer.email}</p>
       <p class="border m=2">GitHub: ${engineer.gitHub}</p>
   </div>  
-</div>`;
+</div>`
 };
 
 const generateInternCard = (intern) => {
@@ -101,7 +101,7 @@ const generateInternCard = (intern) => {
       <p class="border m-2"><i class="fas fa-envelope-square"></i>Email: ${intern.email}</p>
       <p class="border m=2">School: ${intern.school}</p>
   </div>  
-</div>`;
+</div>`
 };
 
 module.exports = generateHTML;
